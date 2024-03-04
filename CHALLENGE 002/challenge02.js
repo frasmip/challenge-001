@@ -7,10 +7,14 @@
  * - Dos palabras exactamente iguales no son anagrama.
  */
 
+
+
+
 function isAnagram(palabra1, palabra2) {
     if (palabra1.toLowerCase() === palabra2.toLowerCase()) {
-    return false
+        return false;
     }
-} return palabra1.toLowerCase().split("").sort().join("") === palabra2.toLowerCase().split("").sort().join("");
+    return palabra1.toLowerCase().split('').sort().join('') === palabra2.toLowerCase().split('').sort().join('');
+}
 
-console.log(isAnagram("amor", "roma"));
+console.log(isAnagram("Beso", "ROMA")); 

@@ -1,15 +1,14 @@
-const esPrimo = (num) => {
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
-            return false
-        }
-    }
-    return num > 1
+const calcularPoligono = (poligono) => {
+    let area;
+        
+        area =  (poligono === "Triangulo")  ? console.log(3 * 3 / 2):
+                (poligono === "Cuadrado")   ? console.log(10 * 3):
+                (poligono === "Rectangulo") ? console.log(4 * 7):
+                
+
+     console.log(`El area de un ${poligono.toLowerCase()} es ${area}`);
 }
 
-const printNumber = () => {
-    for (let i = 1; i <= 100; i++) {
-        console.log(i)
-    }
-}
-
+calcularPoligono("Triangulo");
+calcularPoligono("Cuadrado");
+calcularPoligono("Rectangulo");
